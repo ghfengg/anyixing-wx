@@ -1,0 +1,87 @@
+/* 详情页的 WXSS 文件 */
+.container {
+  padding: 10px;
+  margin-top:124px;
+}
+
+.declare {
+  background-color: #f9f9f9;
+  /* 背景颜色 */
+  border: 1px solid #ccc;
+  /* 边框颜色和宽度 */
+  border-radius: 5px;
+  /* 圆角边框 */
+  padding: 10px;
+  /* 内边距 */
+  margin-bottom: 15px;
+  /* 底部外边距 */
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.declare-title {
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.disease-item {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.disease-title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disease-name {
+  font-weight: bold;
+}
+
+.disease-date {
+  font-size:14px;
+  color: gray;
+}
+
+.disease-description {
+  font-size: 14px;
+}
+
+/* 加载动画遮罩层样式 */
+.loading-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+  z-index: 999;
+}

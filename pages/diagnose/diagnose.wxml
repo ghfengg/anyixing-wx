@@ -1,0 +1,24 @@
+
+<view class="container">
+  <view class="body-map">
+    <image src="../../static/images/body_structure.jpg" class="body-image"></image>
+    <view class="location">
+      <view class="left">
+        <text class="label head" data-label="头部" bindtap="handleTap">头部</text>
+        <text class="label neck" data-label="颈部" bindtap="handleTap">颈部</text>
+        <text class="label chest" data-label="胸部" bindtap="handleTap">胸部</text>
+        <text class="label abdomen" data-label="腹部" bindtap="handleTap">腹部</text>
+        <text class="label private" data-label="阴部" bindtap="handleTap">阴部</text>
+        <text class="label limbs" data-label="四肢" bindtap="handleTap">四肢</text>
+      </view>
+      <view class="right">
+        <text class="label back" data-label="背部" bindtap="handleTap">背部</text>
+        <text class="label whole" data-label="全身" bindtap="handleTap">全身</text>
+      </view>
+    </view>
+
+
+
+
+  </view>
+</view>

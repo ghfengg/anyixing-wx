@@ -1,0 +1,53 @@
+.container{
+  margin-top:60px;
+}
+
+.hot-question,.new-question{
+  width: 90%;
+  border:1px solid rgb(219, 219, 219);
+  padding:10px;
+  border-radius: 10px;
+  margin-bottom:20px;
+}
+.hot-question .title{
+  padding: 15px 10px;
+  font-size:20px;
+  font-weight: bold;
+}
+.list {
+  background-color: #fff;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.list-item text {
+  font-size: 16px;
+  color: #333;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.new-question .upload-icon{
+  width: 20px;
+  height: 20px;
+}
+.new-question .btn{
+  display: flex;
+}
+.attachment-button{
+  width:50%;
+}
+.submit-button{
+  width:40%;
+}

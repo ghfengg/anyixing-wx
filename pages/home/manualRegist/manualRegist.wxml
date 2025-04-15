@@ -1,0 +1,55 @@
+<custom-nav title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <form class="form" bindsubmit="formSubmit" report-submit="true">
+    <view class="form-group">
+      <label for="description">| 症状描述</label>
+      <textarea class="description" placeholder="请简单描述您的症状,描述含有部位和症状,例如:最近总是感觉头部有点眩晕"></textarea>
+    </view>
+    <view class="form-group">
+      <label for="duration">| 持续时间</label>
+      <picker mode="selector" id="duration" name="duration" range="{{durationRange}}" value="{{durationIndex}}">
+        <view class="picker">{{durationRange[durationIndex]}}</view>
+      </picker>
+    </view>
+    <view class="form-group">
+      <label>| 症状程度</label>
+      <picker mode="selector" id="level" name="level" range="{{level}}" value="{{levelIndex}}">
+        <view class="picker">{{level[levelIndex]}}</view>
+      </picker>
+    </view>
+    <view class="form-group attachment-tips">
+      <text class="attachment-tips">*为了帮助你更快的诊断病情,请尽量补充以下材料</text>
+    </view>
+    <view class="form-group">
+      <label>| 检查报告</label>
+      <button class="attachment-button" bindtap="addExamineAttachment">
+        <image src="/static/images/index-upload.png" class="upload-icon" />
+        上传文件
+      </button>
+      <view class="attachment-list">
+        <block wx:for="{{examineAttachmentList}}" wx:key="*this">
+          <view class="attachment-item">
+            <image src="{{item}}" mode="aspectFit"></image>
+            <text class="delete-button" data-index="{{index}}" bindtap="removeExamineAttachment">×</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="form-group">
+      <label>| 过往病史</label>
+      <button class="attachment-button" bindtap="addHisAttachment">
+        <image src="/static/images/index-upload.png" class="upload-icon" />
+        上传文件
+      </button>
+      <view class="attachment-list">
+        <block wx:for="{{hisAttachmentList}}" wx:key="*this">
+          <view class="attachment-item">
+            <image src="{{item}}" mode="aspectFit"></image>
+            <text class="delete-button" data-index="{{index}}" bindtap="removeHisAttachment">×</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <button class="submit" formType="submit">确定</button>
+  </form>
+</view>

@@ -1,0 +1,10 @@
+<custom-nav title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <view class="chart-container">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"/>
+  </view>
+  <view class="interpretation">
+    <text>指标解读：</text>
+    <text>{{ interpretation }}</text>
+  </view>
+</view>

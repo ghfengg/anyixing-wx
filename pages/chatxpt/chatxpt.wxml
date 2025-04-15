@@ -1,0 +1,25 @@
+<custom-nav hideBackButton="{{true}}" title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <scroll-view class="chat-container" scroll-y="true" scroll-top="{{scrollTop}}">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message" wx:if="{{item.isUser}}">
+        <text class="user-message">{{item.content}}</text>
+      </view>
+      <view class="message" wx:if="{{!item.isUser}}">
+        <text class="ai-message">{{item.content}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="input-area">
+    <button class="upload-btn" bindtap="handleFileUpload">
+      <image src="/static/images/index-upload.png" />
+    </button>
+    <input class="user-input" type="text" placeholder="输入你的问题..." bindconfirm="handleSend" confirm-type="send" bindinput="bindInput" value="{{userInput}}" />
+    <button class="clear-btn" bindtap="clearHistory">
+      <image src="/static/images/clear.png"/>
+    </button>
+    <button class="send-btn" bindtap="handleSend">
+      <image src="/static/images/send.png"/>
+    </button>
+  </view>
+</view>

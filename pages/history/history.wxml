@@ -1,0 +1,13 @@
+
+<view class="container">
+  <block wx:for="{{consultations}}" wx:key="id">
+    <view class="consultation">
+      <view class="date">咨询日期: {{item.date}}</view>
+      <view class="question">问题: {{item.question}}</view>
+      <view class="status-container">
+        <view class="status {{item.status === '已完结' ? 'completed' : 'in-progress'}}">{{item.status}}</view>
+        <button class="todo" wx:if="{{item.status === '已完结'}}" bindtap="viewTask">查看代办</button>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,29 @@
+.container {
+  margin-top:40px;
+}
+
+.notification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+
+.notice-desc {
+  font-size: 16px;
+  margin-bottom: 8px; /* 添加一些间距 */
+  white-space: pre-wrap; /* 确保文本换行 */
+}
+
+.notice-date {
+  font-size: 14px;
+  color: #666;
+  white-space: pre-wrap; /* 确保文本换行 */
+}

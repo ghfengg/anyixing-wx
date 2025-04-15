@@ -1,0 +1,117 @@
+.container {
+  margin: 124px auto;
+  padding:0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  height: 100vh;
+}
+.description{
+  font-size:12px;
+}
+.form-group {
+  margin:10px 20px;
+  background-color:#ffffff;
+  border:0;
+  border-radius: 10px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+input, picker, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 80px;
+  width:100%;
+  resize: vertical;
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+}
+.radio-item {
+  display: inline-block; 
+  margin-right: 20px;
+}
+/* 修改选中后的 radio 按钮颜色 */
+input[type="radio"]:checked::before {
+  background-color: #007bff; 
+  border-color: #007bff; 
+}
+.submit {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #845EC2;
+  color: white;
+  text-align: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+#file-name {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.attachment-button {
+  font-size:16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #34495e;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-icon{
+  width: 20px; /* 根据需要调整图标大小 */
+  height: 20px;
+  margin-right: 8px; /* 根据需要调整图标与文字的间距 */
+}
+
+.attachment-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attachment-item {
+  position: relative;
+  margin: 10px;
+}
+.attachment-item image {
+  width: 40px;
+  height: 40px;
+}
+.attachment-tips{
+  margin-top:20px;
+}
+.attachment-tips{
+  color:#c43d25;
+}

@@ -1,0 +1,15 @@
+<custom-nav title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <view class="declare">
+    <text class="declare-title">*免责申明:</text>
+    <text class="declare-content">本平台仅提供基于用户输入健康数据的诊断结果推断，并可便捷帮助用户打通医院绿色通道，例如开处方和预约检查，但无法替代专业医疗建议或正式治疗。</text>
+  </view>
+  <view class="content">
+    <text class="title">{{item.title}}</text>
+    <text class="description">{{item.description}}</text>
+  </view>
+  <view class="op">
+    <button class="apply-button" disabled="{{applyDisabled}}" bindtap="apply">{{applyName}}</button>
+    <button wx:if="{{item.type=='drug'}}" disabled="{{alarmDisabled}}" class="alarm-button" bindtap="alarm">设置提醒</button>
+  </view>
+</view>

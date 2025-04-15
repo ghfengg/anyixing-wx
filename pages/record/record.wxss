@@ -1,0 +1,112 @@
+.container {
+  padding: 0;
+}
+
+.diagnose{
+  padding-top:124px;
+  width:90%;
+  margin-bottom:20px;
+}
+.diagnose-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 22px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #000000; /* 白色文字 */
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.examination{
+  width:24px;
+  height:22px;
+  margin-right:5px;
+}
+.record-trend{
+  width:20px;
+  height:16px;
+}
+.abnormal-img{
+  width:14px;
+  height:14px;
+}
+.upload-icon{
+  width: 20px; /* 根据需要调整图标大小 */
+  height: 20px;
+  margin-right: 8px; /* 根据需要调整图标与文字的间距 */
+}
+.health-section {
+  width: 90%;
+  padding:10px;
+}
+.health-content{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+.health-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  /* background-color: #a28acb; */
+  border-top-left-radius: 10rpx;
+  border-top-right-radius:5px;
+  border-bottom:1px solid #ccc
+}
+.group-name {
+  font-size: 20px;
+  font-weight: bold;
+  color:#000000;
+}
+.add-button {
+  margin-right: 0px;
+  /* background-color: #0081cf; */
+  color: black;
+  border-radius: 5px;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 40rpx;
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.indicator {
+  height:30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+.indicator-name {
+  font-size: 26rpx;
+  color:black;
+  font-weight: bold;
+  width:30%;
+}
+.indicator-value {
+  font-size: 26rpx;
+  color: #333;
+  text-align: left;
+  margin-left:30px;
+  width:40%;
+}
+.abnormal{
+  color:red;
+}
+.trend-button {
+  margin-right: 0rpx;
+  background-color: #ffffff;
+  color: black;
+  font-size:12px;
+  padding: 2rpx 10rpx;
+  border-radius: 5rpx;
+  height:20px;
+  line-height: 20px;
+}

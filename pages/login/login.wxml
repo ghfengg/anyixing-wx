@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="top">
+    <image class="brain-icon" src="/static/images/login-icon.png"></image>
+    <text class="title">安医行</text>
+  </view>
+
+  <view class="center">
+    <text class="phonenumber">186****8888</text>
+    <button class="login-btn" bindtap="login">一键登录</button>
+  </view>
+
+  <view class="bottom">
+    <checkbox-group bindchange="checkboxChange">
+      <label>
+        <checkbox class="cb" value="agree" /> <text style="color:#FFFFFF">我已阅读并同意</text>
+        <text class="link" bindtap="showModal">《安医行小程序用户协议和隐私条款》</text>
+      </label>
+    </checkbox-group>
+  </view>
+</view>
+<view wx:if="{{showModal}}" class="modal">
+  <view class="modal-content">
+    <text class="declare-title">用户协议与隐私政策</text>
+    <text class="declare-content">服务协议与隐私政策 为了更好地保障您的个人权益，在您使用产品的全部功能前，请仔细阅读并理解
+      一、《服务协议》:
+      1. 服务内容：本平台通过智能系统为您提供健康数据分析和诊断辅助服务，旨在帮助您管理个人健康，但不作为正式医疗诊断手段，所有建议应结合医生的专业意见。
+      2. 使用要求：用户应提供准确的健康数据，并确保使用本平台服务的行为符合相关法律规定。您对自己的账号及使用行为负责，禁止任何非法或不当使用。
+      3. 责任声明：本平台不对任何基于健康数据的分析或建议结果承担法律责任，用户需自行判断结果的适用性，任何健康问题请咨询专业医生。
+      4. 协议修改：我们保留随时修改本协议条款的权利，用户应定期查阅并遵守更新后的条款。
+      二、《隐私政策》:
+      1. 数据收集：我们收集并存储您提供的健康数据，仅用于提供健康管理和诊断辅助服务。
+      2. 数据使用：您的数据仅限于为您提供个性化健康服务，未经您的同意不会向第三方共享。
+      3. 数据安全：我们采取合理的技术手段保护您的数据安全，防止未经授权的访问、泄露或篡改。
+      4. 数据权利：您有权访问、修改或删除您提供的健康数据。如有任何隐私问题或请求，请通过客服与我们联系。
+</text>
+    <button bindtap="hideModal">关闭</button>
+  </view>
+</view>

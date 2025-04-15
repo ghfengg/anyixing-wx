@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/notice/notice",
+    "pages/service/service",
+    "pages/home/manualRegist/manualRegist",
+    "pages/home/iotRegist/iotRegist",
+    "pages/home/report/report",
+    "pages/home/todoDetail/todoDetail",
+    "pages/record/record",
+    "pages/chatxpt/chatxpt",
+    "pages/history/history",
+    "pages/task/task",
+    "pages/profile/profile",
+    "pages/trend/trend",
+    "pages/taskDetail/taskDetail",
+    "pages/diagnose/diagnose",
+    "pages/diagnose/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "安医行",
+    "navigationBarBackgroundColor": "#845EC2",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#677381",
+    "selectedColor": "#845EC2",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/images/home-icon.png",
+        "selectedIconPath": "static/images/home-selected-icon.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "健康档案",
+        "iconPath": "static/images/record-icon.png",
+        "selectedIconPath": "static/images/record-selected-icon.png"
+      },
+      {
+        "pagePath": "pages/chatxpt/chatxpt",
+        "text": "问问",
+        "iconPath": "static/images/chat-icon.png",
+        "selectedIconPath": "static/images/chat-selected-icon.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "static/images/profile-icon.png",
+        "selectedIconPath": "static/images/profile-selected-icon.png"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    },
+    "permission": {
+      "scope.userInfo": {
+        "desc": "你的信息将用于展示在个人中心页面"
+      }
+    }
+  }
+}

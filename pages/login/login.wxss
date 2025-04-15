@@ -1,0 +1,142 @@
+.container {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffab86, #845EC2);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列 */
+  align-items: center;
+  /* 水平居中对齐 */
+  justify-content: center;
+  /* 垂直居中对齐 */
+  height: 20vh;
+  /* 根据需要调整高度 */
+}
+
+.brain-icon {
+  width: 100px;
+  /* 根据需要调整图标大小 */
+  height: 100px;
+  /* 根据需要调整图标大小 */
+  margin-bottom: 8px;
+  /* 图标和文字之间的间距 */
+}
+
+.title {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.center {
+  margin-top:200px;
+  /* background-color: #FFFFFF; */
+  width: 70%;
+  height: 40vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列 */
+  align-items: center;
+  /* 水平居中对齐 */
+  justify-content: center;
+  /* 垂直居中对齐 */
+}
+
+.login-title {
+  height: 20%;
+}
+
+.phonenumber,
+.login-btn {
+  height: 40%;
+}
+
+.login-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.phonenumber {
+  height: 20%;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items:flex-start;
+  margin-bottom:20px;
+  color:#FFFFFF;
+}
+
+.login-btn {
+  font-size: 20px;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  background-color: #845EC2;
+  color: #FFFFFF;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  bottom: 0;
+  padding: 10px;
+  margin: 0; /* 确保没有多余的外边距 */
+  font-size:14px;
+}
+label{
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+navigator {
+  color: #1cbbb4;
+  margin: 0 5px;
+}
+.link {
+  color: #026fce;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  height:auto;
+  max-width: 300px;
+  text-align: center;
+}
+.declare-title,.declare-content{
+  display: block;
+}
+.declare-title{
+  font-size:20px;
+  margin-bottom:10px;
+  font-weight: bold;
+}
+.declare-content{
+  font-size:12px;
+  text-align: left;
+  margin-bottom:10px;
+  color:gray;
+}
+
+.cb {
+  transform: scale(0.6, 0.6);
+}

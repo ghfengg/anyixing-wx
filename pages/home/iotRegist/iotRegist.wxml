@@ -1,0 +1,6 @@
+<custom-nav title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <form class="form" bindsubmit="formSubmit" report-submit="true">
+    <button class="submit" formType="submit">确定录入</button>
+  </form>
+</view>

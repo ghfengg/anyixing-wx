@@ -1,0 +1,33 @@
+<custom-nav title="" showNavBtn="{{false}}"></custom-nav>
+<view class="container">
+  <view class="hot-question">
+    <text class="title">热门问题</text>
+    <view class="list">
+      <block wx:for="{{questions}}" wx:key="index">
+        <view class="list-item">
+          <text>{{item.text}}</text>
+          <view class="arrow"></view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="new-question">
+    <textarea class="" placeholder="请输入您要求助的问题" />
+    <view class="btn">
+      <button class="attachment-button" bindtap="addAttachment">
+        <image src="/static/images/index-upload.png" class="upload-icon" />
+        上传附件(图片)
+      </button>
+      <button class="submit-button" bindtap="submitQuestion">提交</button>
+    </view>
+  </view>
+  <!-- 附件 -->
+  <view class="attachment-list">
+    <block wx:for="{{examineAttachmentList}}" wx:key="*this">
+      <view class="attachment-item">
+        <image src="{{item}}" mode="aspectFit"></image>
+        <text class="delete-button" data-index="{{index}}" bindtap="removeExamineAttachment">×</text>
+      </view>
+    </block>
+  </view>
+</view>

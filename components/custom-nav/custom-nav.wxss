@@ -1,0 +1,53 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #845EC2;
+  /* background: linear-gradient(to bottom, #ffab86, #845EC2); */
+  z-index: 1000;
+  color:#FFFFFF;
+  align-items: flex-end;
+}
+.left, .center, .right {
+  flex: 1;
+}
+.center{
+  margin-bottom:30px;
+  font-size:18px;
+}
+.right{
+  display:flex;
+  justify-content: flex-end;
+}
+.message-btn, .service-btn {
+  margin-right: 10px;
+}
+.nav-back{
+  margin:10px;
+}
+.message-icon,.customer-service-icon{
+  width:24px;
+  height:24px;
+  margin:10px;
+  right:0px;
+}
+.message-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.red-dot {
+  position: absolute;
+  top: 6px; /* 调整这个值来改变红点的垂直位置 */
+  right: 4px; /* 调整这个值来改变红点的水平位置 */
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid white; /* 可选：添加白色边框 */
+}
+.red-dot.hidden {
+  display: none; /* 隐藏红点 */
+}

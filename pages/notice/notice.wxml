@@ -1,0 +1,10 @@
+<custom-nav title="" showNavBtn="{{false}}"></custom-nav>
+<view class="container">
+  <view wx:for="{{notifications}}" wx:key="index" class="notification">
+    <view class="content">
+      <text class="notice-desc">{{item.description}}</text>
+      <text class="notice-date">{{item.date}}</text>
+    </view>
+    <!-- <button class="view-button">查看</button> -->
+  </view>
+</view>

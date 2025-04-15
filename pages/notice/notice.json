@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通知提醒",
+  "usingComponents": {
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  padding: 20px;
+}
+
+.consultation {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.date, .question {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.question{
+  color:gray;
+}
+.todo{
+  color: #000000;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right:0px;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  color:#ffffff;
+  font-size:12px;
+}
+
+.completed {
+  background-color: #00c9a7;
+}
+
+.in-progress {
+  background-color: #ffc75f;
+}

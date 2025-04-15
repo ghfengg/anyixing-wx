@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/chat/chat"
+  ],
+  "window": {
+    "navigationBarTitleText": "智能对话"
+  },
+  "usingComponents": {
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

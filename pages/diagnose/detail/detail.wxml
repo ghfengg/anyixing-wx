@@ -1,0 +1,26 @@
+<custom-nav title="安医行健康智脑"></custom-nav>
+<!-- 详情页的 WXML 文件 -->
+<view wx:if="{{!loading}}">
+  <view class="container">
+    <view class="declare">
+      <text class="declare-title">*免责申明:</text>
+      <text class="declare-content">本平台仅提供基于用户输入健康数据的诊断结果推断，并可便捷帮助用户打通医院绿色通道，例如开处方和预约检查，但无法替代专业医疗建议或正式治疗。</text>
+    </view>
+    <block wx:for="{{diseases}}" wx:key="name">
+      <view class="disease-item" data-disease="{{item}}" bindtap="navigateToDetail">
+        <view class="disease-title">
+          <text class="disease-name">{{item.name}}</text>
+          <text class="disease-date">{{item.date}}</text>
+        </view>
+        <view class="disease-content">
+          <text class="disease-description">{{item.description}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 加载动画遮罩层 -->
+  <view wx:if="{{loading}}" class="loading-mask">
+    <text>诊断中</text>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page {
+  position: relative;
+}
+
+/* tabbar 阴影效果 */
+page::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rpx;
+  background: transparent;
+  box-shadow: 0 -2rpx 20rpx 2rpx rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="attachment">
+    <form bindsubmit="formSubmit" report-submit="true">
+      <text>| 请上传医疗机构出具的{{reportType}}报告</text>
+      <button class="attachment-button" bindtap="addAttachment">
+        <image src="/static/images/index-upload.png" class="upload-icon" />
+        上传
+      </button>
+      <view class="attachment-list">
+        <block wx:for="{{attachmentList}}" wx:key="*this">
+          <view class="attachment-item">
+            <image src="{{item}}" mode="aspectFit"></image>
+            <text class="delete-button" data-index="{{index}}" bindtap="removeAttachment">×</text>
+          </view>
+        </block>
+      </view>
+      <button class="submit" formType="submit">确定</button>
+    </form>
+  </view>
+</view>

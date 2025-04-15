@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+  margin-top:124px;
+}
+
+.declare {
+  margin: 10px;
+  background-color: #f9f9f9;
+  /* 背景颜色 */
+  border: 1px solid #ccc;
+  /* 边框颜色和宽度 */
+  border-radius: 5px;
+  /* 圆角边框 */
+  padding: 10px;
+  /* 内边距 */
+  margin-bottom: 15px;
+  /* 底部外边距 */
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.declare-title {
+  color: red;
+}
+
+.content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.title,
+.description,
+.declare {
+  margin-bottom: 10px;
+  /* 添加一些底部间距 */
+}
+
+.op {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.apply-button,.alarm-button {
+  width:40%;
+  background-color: #845EC2;
+  color: #FFFFFF;
+}
+.apply-button[disabled], .alarm-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

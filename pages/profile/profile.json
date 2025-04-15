@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

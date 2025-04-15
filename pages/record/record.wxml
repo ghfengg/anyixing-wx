@@ -1,0 +1,30 @@
+<custom-nav hideBackButton="{{true}}" title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <!-- <view class="header"></view> -->
+  <view class="diagnose">
+    <button class="diagnose-button" bindtap="diagnose">
+      <image src="/static/images/examination.png" class="examination" />
+      智能诊断
+    </button>
+  </view>
+  <view class="health-section" wx:for="{{healthData}}" wx:key="id">
+    <view class="health-content">
+      <view class="health-group">
+        <text class="group-name">{{item.groupName}}</text>
+        <!-- <button class="add-button" bindtap="showAddIndicator">+</button>
+        <add-indicator show="{{showDrawer}}" indicators="{{addIndicators}}" bind:closeDrawer="hideAddIndicator"></add-indicator> -->
+      </view>
+      <view class="indicator" wx:for="{{item.indicators}}" wx:key="id" wx:for-item="indicator" wx:for-index="index">
+        <text class="indicator-name">{{indicator.name}}</text>
+        <view class="indicator-value {{indicator.abnormal ? 'abnormal' : 'normal'}}">
+          {{indicator.value}}
+          <image wx:if="{{indicator.abnormal}}" src="/static/images/warning.png" class="abnormal-img"></image>
+        </view>
+        <button class="trend-button" bindtap="showTrend">
+          <image src="/static/images/record-trend.png" class="record-trend" />
+        </button>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,45 @@
+.container {
+  margin: 0 auto;
+  padding:0;
+  height: 100vh;
+}
+.attachment{
+  margin-top: 20px;
+  width:80%;
+}
+.attachment-button{
+  margin-top:20px;
+}
+
+.upload-icon{
+  width: 20px; /* 根据需要调整图标大小 */
+  height: 20px;
+  margin-right: 8px; /* 根据需要调整图标与文字的间距 */
+}
+
+.attachment-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attachment-item {
+  position: relative;
+  margin: 10px;
+}
+.attachment-item image {
+  width: 40px;
+  height: 40px;
+}
+
+.submit {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  right: 30px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #845EC2;
+  color: white;
+  text-align: center;
+}

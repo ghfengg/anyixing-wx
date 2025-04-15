@@ -1,0 +1,122 @@
+.container {
+  font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 414px;
+  height: auto;
+  margin: 20px auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+}
+
+.status-bar {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.chat-container {
+  height: 580px;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.message {
+  display: flex;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.input-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+}
+
+.user-input {
+  margin-left: 40px !important;
+  margin-right: 10px !important;
+  padding: 5px 10px;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #CCC;
+
+}
+
+.upload-btn {
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-btn,.clear-btn {
+  background-color: transparent;
+  padding: 0;
+  margin-left:5px;
+}
+
+.upload-btn,
+.send-btn,
+.clear-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button::after {
+  border: none;
+}
+
+.upload-btn image,
+.send-btn image,
+.clear-btn image {
+  width: 30px;
+  height: 30px;
+}
+
+input[type="text"] {
+  width: calc(100% - 48px);
+  /* Adjust width to account for button sizes */
+  margin-left: 24px;
+  /* Add margin to avoid overlap with buttons */
+  position: relative;
+}
+
+.user-message {
+  margin-left: auto;
+  background-color: #845EC2;
+  /* 你提到的主题颜色 */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.ai-message {
+  margin-right: auto;
+  background-color: #E0E0E0;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}

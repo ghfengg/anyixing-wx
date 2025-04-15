@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "手动录入",
+  "usingComponents": {
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

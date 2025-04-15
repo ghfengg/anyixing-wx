@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "健康智脑",
+  "usingComponents": {
+    "health-regist-drawer": "/components/health-regist-drawer/health-regist-drawer",
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

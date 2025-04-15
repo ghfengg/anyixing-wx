@@ -1,0 +1,16 @@
+<view class="nav-bar" style="height:{{navBarHeight}}px;">
+  <view class="left">
+    <view wx:if="{{!hideBackButton}}" class="nav-back" bindtap="navBack"><text decode="true">&lt;返回</text></view>
+  </view>
+  <view class="center">
+    <text>{{title}}</text>
+  </view>
+  <view class="right" wx:if="{{showNavBtn}}">
+    <!-- 这里可以放置消息提醒和客服按钮 -->
+    <view class="message-icon-wrapper" bindtap="notice">
+        <image class="message-icon" src="/static/images/notice.png"></image>
+        <view class="red-dot" wx:if="{{redDotVisible}}"></view>
+    </view>
+    <image class="customer-service-icon" src="/static/images/customer-service.png" bindtap="service"></image>
+  </view>
+</view>

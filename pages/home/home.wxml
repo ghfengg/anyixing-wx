@@ -1,0 +1,28 @@
+<custom-nav hideBackButton="{{true}}" title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <!-- <view class="header"></view> -->
+  <view class="notice">
+    根据诊断结果,您有<text style="color: rgb(201, 98, 98);">{{items.length}}</text>项代办!
+  </view>
+  <scroll-view scroll-y="true" class="list">
+    <block wx:for="{{items}}" wx:key="id">
+      <view class="list-item" data-label="{{item}}" bindtap="todoDetail">
+        <image wx:if="{{item.newAdd}}" class="newAdd" src="/static/images/new-add.png" />
+        <image class="icon" src="{{item.icon}}" />
+        <view class="content">
+          <view class="top">
+            <text class="title">{{item.title}}</text>
+            <text class="subtitle">{{item.subtitle}}</text>
+          </view>
+          <view class="bottom">
+            <text class="date">{{item.date}}</text>
+            <image class="arrow" src="/static/images/arow_right.png" />
+          </view>
+        </view>
+
+      </view>
+    </block>
+  </scroll-view>
+  <button class="add-button" bindtap="showDrawer">新增健康指标</button>
+  <health-regist-drawer show="{{drawerVisible}}" bind:closeDrawer="closeDrawer"></health-regist-drawer>
+</view>

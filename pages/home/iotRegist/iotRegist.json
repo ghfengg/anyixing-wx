@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "智能设备录入",
+  "usingComponents": {
+    "custom-nav":"/components/custom-nav/custom-nav"
+  }
+}

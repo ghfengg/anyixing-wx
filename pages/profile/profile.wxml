@@ -1,0 +1,39 @@
+<custom-nav hideBackButton="{{true}}" title="安医行健康智脑"></custom-nav>
+<view class="container">
+  <view class="user-info">
+    <view class="user-details">
+      <image src="{{userInfo.avatarUrl}}" alt="用户头像" class="avatar"></image>
+      <view>
+        <text class="username">{{userInfo.nickName}}\n</text>
+        <text class="userid">{{userInfo.id}}</text>
+      </view>
+    </view>
+    <button class="logout-btn" id="logoutBtn" bindtap="logout">退出登录</button>
+  </view>
+  <view class="section">
+    <text class="section-title">我的设备</text>
+    <block wx:for="{{devices}}" wx:key="id">
+      <view class="section-content">
+        <view>{{item.name}}</view>
+        <button class="remove-device-btn" bindtap="removeDevice" data-id="{{item.id}}">删除</button>
+      </view>
+    </block>
+
+    <button class="add-device-btn" bindtap="addDevice">添加设备</button>
+  </view>
+  <view class="section">
+    <text class="section-title">我的预约单</text>
+    <view class="order-list">
+      <block wx:for="{{orders}}" wx:key="id">
+        <view class="order-item">
+          <view class="order-info">
+            <view class="order-desc">{{item.description}}</view>
+            <view class="order-type">{{item.type}}</view>
+            <view class="order-date">{{item.date}}</view>
+          </view>
+          <button class="view-btn" data-id="{{item.id}}" bindtap="viewOrder">查看</button>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
